@@ -9,8 +9,8 @@ export const CustomContextMenu = ({
   y: number;
   selectedText: string;
 }) => {
+  
   const handleCopySelectedText = (selectedText: string) => {
-    console.log(selectedText);
     if (selectedText) {
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(selectedText);
@@ -23,8 +23,9 @@ export const CustomContextMenu = ({
           document.execCommand("copy");
         } catch (err) {
           console.error(err);
-        }
+        } finally {
         document.body.removeChild(textarea);
+        }
       }
     }
   };
