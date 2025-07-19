@@ -4,7 +4,7 @@ import getQuote from "./utils/getQuote";
 
 export default function App() {
   const [quote, setQuote] = useState<{ author: string; quote: string }>(
-    getQuote()
+    () => getQuote()
   );
   const [key, setKey] = useState(0);
 
