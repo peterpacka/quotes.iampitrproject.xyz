@@ -2,7 +2,7 @@ import { positiveQuotes } from "../data/quotes";
 
 export default function getQuote() {
   const seenQuotes: string[] = JSON.parse(
-    localStorage.getItem("seenQuotes") || "[]"
+    localStorage.getItem("seenQuotes") || "[]",
   );
 
   let filtered = positiveQuotes.filter((q) => !seenQuotes.includes(q.quote));
