@@ -1,69 +1,46 @@
-# React + TypeScript + Vite
+# 📜 Quotes – A simple animated quotes site
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live:** [quotes.iampitrproject.xyz](https://quotes.iampitrproject.xyz)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ About
 
-## Expanding the ESLint configuration
+A small site that shows random quotes with smooth animations.  
+Built with **React** + **Vite**, **Tailwind CSS**, and **Motion**.  
+There’s **no backend** – it’s all static and simple by design!
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Features
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- 🔄 Random quotes
+- 🎞️ Smooth animations with Motion
+- 🎨 Styled with Tailwind CSS
+- ⚡ Fast, lightweight, and no backend needed
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠️ Run locally
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. Clone the repo:
+```bash
+git clone https://github.com/peterpacka/quotes.iampitrproject.xyz.git
+   ```
+2. Install dependencies:
+```bash
+npm install
+   ```
+3. Start dev server:
+```bash
+npm run dev
+  ```
+4. Visit after running:
+ [http://localhost:3000](http://localhost:5173)
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+I’m open to feedback and help! Feel free to open issues or PRs.
+Thanks for stopping by!
+
+— iampitr
