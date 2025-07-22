@@ -82,7 +82,7 @@ export default function App() {
           Made by:{" "}
           <a
             className="text-neutral-400 hover:underline"
-            href="https://iampitrproject.xyz"
+            href="https://iampitr.dev"
             target="_blank"
           >
             Pitr
